@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @picture.description %>
+</p>
+
+<p>
+  <strong>Bracelet:</strong>
+  <%= @picture.is_bracelet %>
+</p>
+<p>
+  <strong>Earrings:</strong>
+  <%= @picture.is_earring %>
+</p>
+<p>
+  <strong>Necklace:</strong>
+  <%= @picture.is_necklace %>
+</p>
+<p>
+  <strong>Set:</strong>
+  <%= @picture.is_set %>
+</p>
+<p>
+  <strong>Other:</strong>
+  <%= @picture.is_other %>
+</p>
+
+<p>
+  <strong>File:</strong>
+  <%= image_tag(@picture.file.url) %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_picture_path(@picture) %> |
+<%= link_to 'Back', pictures_path %>

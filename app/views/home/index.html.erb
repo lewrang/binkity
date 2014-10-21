@@ -1,0 +1,9 @@
+<h1>Index</h1>
+<br />
+
+<% @posts.each do |post| %>
+      <%= post.title %> <br />
+      <%= post.description %>
+      <%= render_gallery_for post.pictures, title: 'description'%>
+      <br /><br />
+<% end %>

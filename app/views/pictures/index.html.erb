@@ -1,0 +1,30 @@
+<h1>Pictures</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th></th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @pictures.each do |picture| %>
+      <tr>
+        <td><%= image_tag(picture.file.thumbnail.url, width: "80") %></td>
+        <td><%= picture.description %></td>
+        <td><%= link_to 'Show', picture %></td>
+        <td><%= link_to 'Edit', edit_picture_path(picture) %></td>
+        <td><%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Picture', new_picture_path %>
+<br />

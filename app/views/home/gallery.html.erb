@@ -1,0 +1,18 @@
+<h1>Gallery</h1>
+<br />
+
+<%= select_tag 'filtering', options_for_select(@filters.collect{ |f| [f[:name], f[:id]] }, selected: "#{params[:filter]}") %>
+
+<%= render_gallery_for @pictures, title: 'description'%>
+
+<script>
+    $('#filtering').change(function(){
+        value = $("#filtering").val();
+        path  = "<%= gallery_path %>";
+        if( value == "" )
+            window.location = path;
+        else
+            window.location = path+"?filter="+value;
+        end
+    });
+</script>

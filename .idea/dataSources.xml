@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="4030223193">
+    <data-source source="LOCAL" name="Rails binkity: development" uuid="9c028757-1e3e-4419-9e28-f235018f9a7c">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/binkity</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails binkity: test" uuid="ea67dc09-2d67-4ab7-8870-5dc7dbfbef8e">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/binkitytest</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails binkity: production" uuid="aca6193a-9841-45a2-9917-5fce3860876c">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/binkity</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+
