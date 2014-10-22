@@ -17,3 +17,7 @@
 /config/environments/development.rb
 /config/environments/production.rb
 /public/uploads
+.ruby-gemset
+.ruby-version
+
+
